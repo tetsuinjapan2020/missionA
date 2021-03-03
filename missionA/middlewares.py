@@ -18,4 +18,4 @@ class LimitRequestMiddleware(MiddlewareMixin):
         requests.insert(0, time.time())
         cache.set(ip, requests, timeout=PERIOD)
         if len(requests) > MAX_REQUEST_PER_MINIUTE:
-            return HttpResponse("请求过于频繁，请稍后重试")
+            return HttpResponse("Too often")
