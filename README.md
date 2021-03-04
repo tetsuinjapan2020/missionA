@@ -17,6 +17,11 @@ Install [Django](https://github.com/django/django)
 
 ## Demo  
   
-Once you start the server, you may see the same wabpage as below :
+Once you start the server, you may see the same wabpage as below :  
+
+  <div align=center><img width="640" height="320" src="https://github.com/tetsuinjapan2020/missionA/blob/main/img/200.png"/></div>. 
+    
+    
+And after you try to reflash 61 times in one minute, you will get the wrong message.  
   
-And after you try to reflash 61 times in one minute, you will get the wrong message.
+  <div align=center><img width="640" height="320" src="https://github.com/tetsuinjapan2020/missionA/blob/main/img/429.png"/></div>.
