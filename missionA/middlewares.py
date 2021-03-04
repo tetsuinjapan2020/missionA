@@ -1,6 +1,6 @@
 import time
 from django.utils.deprecation import MiddlewareMixin
-from django.http.response import HttpResponse
+from django.http.response import HttpResponse, HttpResponseForbidden
 from django.core.cache import caches
 
 MAX_REQUEST_PER_MINUTE = 60
@@ -19,4 +19,4 @@ class LimitRequestMiddleware(MiddlewareMixin):
         requests.insert(0, time.time())
         cache.set(ip, requests, timeout=PERIOD)
         if len(requests) > MAX_REQUEST_PER_MINUTE:
-            return HttpResponse("Too many requests!!!")
+            return HttpResponse("Too many requests!!!", status=429)
