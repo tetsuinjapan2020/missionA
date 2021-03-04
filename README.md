@@ -15,4 +15,8 @@ Install [Django](https://github.com/django/django)
 
 `python manage.py runserver [port]`  
 
-## Demo
+## Demo  
+  
+Once you start the server, you may see the same wabpage as below :
+  
+And after you try to reflash 61 times in one minute, you will get the wrong message.
